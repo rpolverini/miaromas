@@ -1,0 +1,52 @@
+h1, h2, h3 {
+	font-family: 'Playfair Display', serif;
+}
+
+/* Clases personalizadas para conservar estilos originales */
+.care-card {
+	background: #fff;
+	padding: 2rem;
+	border-radius: 1rem;
+	transition: transform 0.3s ease;
+}
+.care-card:hover {
+	transform: translateY(-5px);
+}
+.text-light {
+	color: #666666;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('./fonts/PlayfairDisplay-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3 {
+	font-family: 'Playfair Display', serif;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "miaromas",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./tailwind.css -o ./style.css --minify --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
