@@ -87,30 +87,35 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-                <!-- Producto 1 -->
-                <article class="group fade-in">
-                    <div class="aspect-[4/5] bg-[#F3F0ED] overflow-hidden mb-6 rounded-sm">
-                        <img src="./img/prod-1.webp" alt="Vainilla & Coco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" loading="lazy">
+                <!-- Producto 1 con galería de imágenes -->
+                <article class="group fade-in relative product-gallery-container">
+                    <div class="aspect-[4/5] bg-[#F3F0ED] overflow-hidden mb-6 rounded-sm relative">
+                        <div class="product-gallery-track flex transition-transform duration-700 ease-in-out" style="width: 100%;">
+                            <img src="./img/prod-4.webp" alt="Margaritas - Imagen 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" loading="lazy">
+                            <img src="./img/prod-1.webp" alt="Margaritas - Imagen 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" loading="lazy">
+                            
+                        </div>
+                        <button class="gallery-btn gallery-btn-prev absolute top-1/2 left-4 -translate-y-1/2 bg-white/70 p-1.5 rounded-full shadow-md z-10 hidden md:block">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+                        <button class="gallery-btn gallery-btn-next absolute top-1/2 right-4 -translate-y-1/2 bg-white/70 p-1.5 rounded-full shadow-md z-10 hidden md:block">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5 15.75 12l-7.5 7.5" />
+                            </svg>
+                        </button>
+                        <div class="gallery-dots absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-1 z-10">
+                            <button class="gallery-dot active w-2 h-2 bg-white rounded-full shadow-md"></button>
+                            <button class="gallery-dot w-2 h-2 bg-white/50 rounded-full shadow-md"></button>
+                        </div>
                     </div>
                     <div class="text-center px-4">
                         <h3 class="text-2xl mb-2 font-medium">Margaritas</h3>
                         <p class="text-primary tracking-widest text-sm mb-6">$Consultar</p>
-                        <a href="https://wa.me/5491127277767?text=Hola!%20Me%20interesa%20la%20vela%20de%20Vainilla%20y%20Coco" target="_blank" class="btn-secondary px-10 py-3 rounded-full text-[10px] uppercase tracking-widest font-semibold inline-block">Lo quiero</a>
+                        <a href="https://wa.me/5491127277767?text=Hola!%20Me%20interesa%20la%20vela%20de%20Margaritas" target="_blank" class="btn-secondary px-10 py-3 rounded-full text-[10px] uppercase tracking-widest font-semibold inline-block">Lo quiero</a>
                     </div>
                 </article>
-
-                <!-- Producto 4 -->
-                <article class="group fade-in">
-                    <div class="aspect-[4/5] bg-[#F3F0ED] overflow-hidden mb-6 rounded-sm">
-                        <img src="./img/prod-4.webp" alt="Aroma de MiAromas 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" loading="lazy">
-                    </div>
-                    <div class="text-center px-4">
-                        <h3 class="text-2xl mb-2 font-medium">Margaritas</h3>
-                        <p class="text-primary tracking-widest text-sm mb-6">$Consultar</p>
-                        <a href="https://wa.me/5491127277767?text=Hola!%20Me%20interesa%20la%20vela%20de%20Aroma%204" target="_blank" class="btn-secondary px-10 py-3 rounded-full text-[10px] uppercase tracking-widest font-semibold inline-block">Lo quiero</a>
-                    </div>
-                </article>
-
 
                 <!-- Producto 2 -->
                 <article class="group fade-in">
@@ -120,7 +125,7 @@
                     <div class="text-center px-4">
                         <h3 class="text-2xl mb-2 font-medium">Osito</h3>
                         <p class="text-primary tracking-widest text-sm mb-6">$Consultar</p>
-                        <a href="https://wa.me/5491127277767?text=Hola!%20Me%20interesa%20la%20vela%20de%20Lavanda" target="_blank" class="btn-secondary px-10 py-3 rounded-full text-[10px] uppercase tracking-widest font-semibold inline-block">Lo quiero</a>
+                        <a href="https://wa.me/5491127277767?text=Hola!%20Me%20interesa%20la%20vela%20de%20Osito" target="_blank" class="btn-secondary px-10 py-3 rounded-full text-[10px] uppercase tracking-widest font-semibold inline-block">Lo quiero</a>
                     </div>
                 </article>
 
@@ -132,7 +137,7 @@
                     <div class="text-center px-4">
                         <h3 class="text-2xl mb-2 font-medium">Refill</h3>
                         <p class="text-primary tracking-widest text-sm mb-6">$Consultar</p>
-                        <a href="https://wa.me/5491127277767?text=Hola!%20Me%20interesa%20la%20vela%20de%20Aroma%203" target="_blank" class="btn-secondary px-10 py-3 rounded-full text-[10px] uppercase tracking-widest font-semibold inline-block">Lo quiero</a>
+                        <a href="https://wa.me/5491127277767?text=Hola!%20Me%20interesa%20el%20refill%20de%20velas" target="_blank" class="btn-secondary px-10 py-3 rounded-full text-[10px] uppercase tracking-widest font-semibold inline-block">Lo quiero</a>
                     </div>
                 </article>
 
@@ -145,24 +150,10 @@
                     <div class="text-center px-4">
                         <h3 class="text-2xl mb-2 font-medium">Souvenirs Varios</h3>
                         <p class="text-primary tracking-widest text-sm mb-6">$Consultar</p>
-                        <a href="https://wa.me/5491127277767?text=Hola!%20Me%20interesa%20la%20vela%20de%20Aroma%205" target="_blank" class="btn-secondary px-10 py-3 rounded-full text-[10px] uppercase tracking-widest font-semibold inline-block">Lo quiero</a>
+                        <a href="https://wa.me/5491127277767?text=Hola!%20Me%20interesa%20el%20souvenir%20de%20velas" target="_blank" class="btn-secondary px-10 py-3 rounded-full text-[10px] uppercase tracking-widest font-semibold inline-block">Lo quiero</a>
                     </div>
                 </article>
 
-                <!-- Producto 6 (Placeholder - prod-6.webp no encontrado) 
-                <article class="group fade-in">
-                    <div class="aspect-[4/5] bg-[#F3F0ED] overflow-hidden mb-6 rounded-sm">
-                        <img src="./img/prod-6.webp" alt="Aroma de MiAromas 6 (Placeholder, imagen prod-6.webp no encontrada)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" loading="lazy">
-                    </div>
-                    <div class="text-center px-4">
-                        <h3 class="text-2xl mb-2 font-medium">Aroma 6</h3>
-                        <p class="text-primary tracking-widest text-sm mb-6">$X.XXX</p>
-                        <a href="https://wa.me/5491127277767?text=Hola!%20Me%20interesa%20la%20vela%20de%20Aroma%206" target="_blank" class="btn-secondary px-10 py-3 rounded-full text-[10px] uppercase tracking-widest font-semibold inline-block">Lo quiero</a>
-                    </div>
-                </article>
-		-->
-
-                <!-- TO DO: Add prod-6.webp image and update alt text and image source -->
             </div>
         </section>
 
@@ -285,5 +276,6 @@
 
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
