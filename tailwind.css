@@ -1,3 +1,16 @@
+/* Colores personalizados para compatibilidad con clases del HTML */
+.bg-dark {
+	background-color: #2C2A29;
+}
+.bg-bg {
+	background-color: #FAF8F5;
+}
+.text-dark {
+	color: #2C2A29;
+}
+.text-white {
+	color: #fff;
+}
 h1, h2, h3 {
 	font-family: 'Playfair Display', serif;
 }
