@@ -212,6 +212,70 @@
                 </p>
             </div>
         </div>
+
+        <!-- 
+  Este footer es para ser incluido en los sitios diseñados por tuwebya.ar 
+  Incluye el logo estilizado y el link para mejorar el SEO (PageRank).
+-->
+<style>
+    .tuwebya-footer {
+        margin-top: 1rem;
+
+        padding: 1rem 1rem;
+        background-color: #f9fafb; /* bg-gray-50 */
+        border-top: 1px solid #e5e7eb;
+        text-align: center;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .tuwebya-brand {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: #4b5563; /* text-gray-600 */
+        font-size: 0.875rem; /* text-sm */
+        transition: opacity 0.3s ease;
+    }
+    .tuwebya-brand:hover {
+        opacity: 0.8;
+    }
+    .tuwebya-logo-text {
+        font-size: 1.125rem;
+        letter-spacing: -0.025em;
+        display: flex;
+        align-items: center;
+    }
+    .tuwebya-logo-text .tu { color: #4b5563; font-weight: 400; }
+    .tuwebya-logo-text .web { color: #2563eb; font-weight: 800; }
+    .tuwebya-logo-text .ya { color: #1f2937; font-weight: 900; font-style: italic; }
+    
+    .tuwebya-icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 10px;
+        line-height: 1;
+    }
+</style>
+
+<div class="tuwebya-footer">
+    <a href="https://tuwebya.ar" target="_blank" rel="noopener" class="tuwebya-brand" title="Diseño web por tuwebya.ar">
+        <span>Designed By</span>
+        <div class="tuwebya-icon">ya</div>
+        <div class="tuwebya-logo-text">
+            <span class="tu">tu</span><span class="web">web</span><span class="ya">ya</span>
+        </div>
+    </a>
+</div>
+
     </footer>
 
     <script src="script.js"></script>
